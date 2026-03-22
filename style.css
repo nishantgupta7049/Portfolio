@@ -1,0 +1,104 @@
+* {
+  margin: 100;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background-color: #0f172a;
+  color: white;
+}
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #020617;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.navbar a:hover {
+  color: cyan;
+}
+.hero {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #1e293b;
+}
+.hero span {
+  color: cyan;
+}
+.btn {
+ margin-top: 15px;
+ padding: 10px 20px;
+ border: none;
+ background: cyan;
+ cursor: pointer;
+ transition: 0.3s;
+}
+.btn:hover {
+ background: white;
+ transform: scale(1.1);
+}
+fade-in {
+  opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    transform: translateY(20px);
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+section {
+  padding: 60px;
+  margin: 0 auto;
+}
+.projects {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  flex-wrap: wrap;
+}
+.card {
+  background-color: #1e293b;
+  padding: 15px;
+  border-radius: 5px;
+  width: 260px;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: scale(1.1) rotate(2deg);
+}
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+@media (max-width: 600px) {
+ .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+}
